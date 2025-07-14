@@ -1,0 +1,240 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 40px;
+  
+  .hero-toolbar {
+    height: auto;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .hero-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    opacity: 0.9;
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    
+    button {
+      padding: 8px 24px;
+    }
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+    
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+    
+    img {
+      max-width: 100%;
+      max-height: 350px;
+      border-radius: 8px;
+    }
+  }
+}
+
+/* Sections */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 30px;
+  color: #3f51b5;
+}
+
+/* Features */
+.features-section {
+  margin: 60px 0;
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .feature-card {
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 48px;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 16px;
+      color: #3f51b5;
+    }
+    
+    h3 {
+      margin: 16px 0;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/* How It Works */
+.how-it-works {
+  margin: 60px 0;
+  
+  .step-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+}
+
+/* Popular Services */
+.popular-services {
+  margin: 60px 0;
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+    @media (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: 960px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .service-card {
+    transition: transform 0.3s;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    .price {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #3f51b5;
+    }
+  }
+  
+  .view-all {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+/* Testimonials */
+.testimonials {
+  margin: 60px 0;
+  
+  .testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media (min-width: 600px) {
+      flex-direction: row;
+    }
+  }
+  
+  .testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 20px;
+    
+    @media (min-width: 600px) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .testimonial-text {
+    flex: 1;
+    
+    p {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .testimonial-author {
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+/* CTA Section */
+.cta-section {
+  margin: 60px 0;
+  
+  .cta-card {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+    
+    .cta-button-large {
+      padding: 12px 32px;
+      font-size: 1.1rem;
+    }
+  }
+}
